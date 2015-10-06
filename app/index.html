@@ -50,7 +50,23 @@
 </div>
 
 <div class="container">
-  <div ng-include="'views/sortable.html'" ng-controller="SortableCtrl"></div>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Sort Test</a>
+    </li>
+    <li role="presentation">
+      <a href="#pivottest" aria-controls="pivottest" role="tab" data-toggle="tab">Pivot Test</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <div ng-include="'views/sortable.html'" ng-controller="SortableCtrl"></div>
+    </div>
+    <div class="tabpanel" class="tab-pane" id="pivottest">
+      <div ng-include="'views/pivottest.html'" ng-controller="PivottestCtrl"></div>
+    </div>
+  </div>
 </div>
 
 <div class="footer">
@@ -91,6 +107,7 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/sortable.js"></script>
+<script src="scripts/controllers/pivottest.js"></script>
 <!-- endbuild -->
 </body>
 </html>
