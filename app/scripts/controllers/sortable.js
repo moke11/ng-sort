@@ -9,25 +9,21 @@
  */
 angular.module('ngSortApp')
   .controller('SortableCtrl', function ($scope) {
+
+
     $scope.items = [{
-      name: 'item 1'
+      name: 'pancakes',
+      displayorder: 1,
     }, {
-      name: 'item 2'
-    }, {
-      name: 'item 3'
-    }, {
-      name: 'item 4'
-    }, {
-      name: 'item 5'
-    }, {
-      name: 'item 6'
-    }, {
-      name: 'item 7'
-    }, {
-      name: 'item 8'
+      name: 'sausage',
+      displayorder: 2,
     }]
 
     $scope.sortableOptions = {
-      containment: '#sortableContainer'
+      containment: '#sortableContainer',
+      orderChanged: function(event){
+        console.log(event.source);
+        console.log(event.dest);
+      }
     };
   });
