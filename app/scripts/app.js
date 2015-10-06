@@ -15,5 +15,6 @@ angular
     'ngResource',
     'ngSanitize',
     'ngTouch',
-    'as.sortable'
+    'as.sortable',
+    'ui.grid'
   ]);
