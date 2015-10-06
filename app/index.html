@@ -55,23 +55,29 @@
       <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Sort Test</a>
     </li>
     <li role="presentation">
-      <a href="#pivottest" aria-controls="pivottest" role="tab" data-toggle="tab">Pivot Test</a>
+      <a href="#pivotTest" aria-controls="pivottest" role="tab" data-toggle="tab">Pivot Test</a>
+    </li>
+    <li role="presentation">
+      <a href="#gridExample" aria-controls="gridExample" role="tab" data-toggle="tab">Grid Example</a>
     </li>
   </ul>
 
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
+    <div class="tab-pane active" id="home">
       <div ng-include="'views/sortable.html'" ng-controller="SortableCtrl"></div>
     </div>
-    <div class="tabpanel" class="tab-pane" id="pivottest">
+    <div class="tab-pane" id="pivotTest">
       <div ng-include="'views/pivottest.html'" ng-controller="PivottestCtrl"></div>
+    </div>
+    <div class="tab-pane" id="gridExample">
+      <div ng-include="'views/gridExample.html'" ng-controller="GridExampleCtrl"></div>
     </div>
   </div>
 </div>
 
 <div class="footer">
   <div class="container">
-    <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <p><span class="glyphicon glyphicon-signal"></span> from mokesit</p>
   </div>
 </div>
 
@@ -108,6 +114,7 @@
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/sortable.js"></script>
 <script src="scripts/controllers/pivottest.js"></script>
+<script src="scripts/controllers/gridexample.js"></script>
 <!-- endbuild -->
 </body>
 </html>
